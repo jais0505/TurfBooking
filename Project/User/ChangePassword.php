@@ -1,7 +1,7 @@
 <?php
 include("../Assets/Connection/Connection.php");
 include("Head.php");
-session_start();
+//session_start();
 $selQry="select * from tbl_user where user_id=".$_SESSION["uid"];
 $result=$Con->query($selQry);
 $data=$result->fetch_assoc();
